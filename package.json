@@ -15,5 +15,7 @@
     "vue": "^3.4.0",
     "vue-i18n": "^11.4.4"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "sharp": "^0.34.5"
+  }
 }

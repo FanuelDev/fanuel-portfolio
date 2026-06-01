@@ -45,7 +45,10 @@
         <div class="photo-ring ring1"></div>
         <div class="photo-ring ring2"></div>
         <div class="hero-photo-frame">
-          <img src="/images/IMG_4501.JPG" alt="Fanuel Israël TOVEY" />
+          <picture>
+            <source srcset="/images/IMG_4501.webp" type="image/webp" />
+            <img src="/images/IMG_4501.JPG" alt="Fanuel Israël TOVEY" fetchpriority="high" />
+          </picture>
           <div class="photo-overlay"></div>
         </div>
         <div class="hero-badge">

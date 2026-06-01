@@ -22,7 +22,10 @@
       <div class="biz-visual" ref="visualEl">
         <div class="biz-glow"></div>
         <div class="biz-photo">
-          <img src="/images/IMG_4511.JPG" alt="Fanuel — Conseiller" />
+          <picture>
+            <source srcset="/images/IMG_4511.webp" type="image/webp" />
+            <img src="/images/IMG_4511.JPG" alt="Fanuel — Conseiller" loading="lazy" />
+          </picture>
           <div class="biz-photo-overlay"></div>
         </div>
         <div class="biz-float-card">

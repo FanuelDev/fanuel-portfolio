@@ -3,8 +3,14 @@
     <div class="container about-grid">
       <div class="photo-col" ref="photoEl">
         <div class="photo-stack">
-          <img class="p1" src="/images/IMG_4504.JPG" alt="Fanuel" />
-          <img class="p2" src="/images/IMG_4506.JPG" alt="Fanuel" />
+          <picture class="p1">
+            <source srcset="/images/IMG_4504.webp" type="image/webp" />
+            <img src="/images/IMG_4504.JPG" alt="Fanuel" loading="lazy" />
+          </picture>
+          <picture class="p2">
+            <source srcset="/images/IMG_4506.webp" type="image/webp" />
+            <img src="/images/IMG_4506.JPG" alt="Fanuel" loading="lazy" />
+          </picture>
           <div class="photo-badge"><span>{{ t('about.badge') }}</span></div>
         </div>
       </div>
@@ -79,14 +85,14 @@ onMounted(() => {
 
   const p1 = sectionEl.value.querySelector('.p1')
   const p2 = sectionEl.value.querySelector('.p2')
-  ;[p1, p2].forEach(img => {
-    img.addEventListener('mousemove', e => {
-      const r = img.getBoundingClientRect()
+  ;[p1, p2].forEach(el => {
+    el.addEventListener('mousemove', e => {
+      const r = el.getBoundingClientRect()
       const rx = ((e.clientY - r.top ) / r.height - 0.5) * 10
       const ry = ((e.clientX - r.left) / r.width  - 0.5) * -10
-      gsap.to(img, { rotateX: rx, rotateY: ry, duration: 0.4, ease: 'power2.out' })
+      gsap.to(el, { rotateX: rx, rotateY: ry, duration: 0.4, ease: 'power2.out' })
     })
-    img.addEventListener('mouseleave', () => gsap.to(img, { rotateX: 0, rotateY: 0, duration: 0.5 }))
+    el.addEventListener('mouseleave', () => gsap.to(el, { rotateX: 0, rotateY: 0, duration: 0.5 }))
   })
 })
 </script>
@@ -96,7 +102,8 @@ onMounted(() => {
 .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
 
 .photo-stack { position: relative; height: 580px; perspective: 1000px; }
-.photo-stack img { position: absolute; border-radius: 20px; border: 1px solid var(--border); object-fit: cover; object-position: top center; cursor: pointer; }
+.photo-stack picture { position: absolute; display: block; }
+.photo-stack img { width: 100%; height: 100%; border-radius: 20px; border: 1px solid var(--border); object-fit: cover; object-position: top center; cursor: pointer; display: block; }
 .p1 { width: 72%; height: 78%; top: 0; left: 0; box-shadow: 0 0 50px var(--glow); z-index: 2; }
 .p2 { width: 56%; height: 62%; bottom: 0; right: 0; box-shadow: 0 0 35px var(--glow2); z-index: 1; }
 .photo-badge {
