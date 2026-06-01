@@ -5,26 +5,38 @@
 
     <div class="container hero-inner">
       <div class="hero-content" ref="heroContent">
-        <div class="hero-tag" ref="heroTag">// Lomé, Togo — disponible en freelance</div>
+        <div class="hero-tag" ref="heroTag">{{ t('hero.tag') }}</div>
         <h1 class="hero-name" ref="heroName">
-          Fanuel Israël<br />
-          <span class="grad">TOVEY K.</span>
+          {{ t('hero.name1') }}<br />
+          <span class="grad">{{ t('hero.name2') }}</span>
         </h1>
         <p class="hero-sub" ref="heroSub">
-          <strong>Développeur Web &amp; Mobile.</strong> Conseiller d'entreprises.
-          Auteur. Leader &amp; Enseignant.<br />
-          Un esprit curieux au service de la <strong>technologie</strong>,
-          des <strong>hommes</strong> et de <strong>Dieu</strong>.
+          <strong>{{ t('hero.sub_dev') }}</strong>
+          {{ ' ' }}{{ t('hero.sub', { dev: '' }).replace(t('hero.sub_dev'), '').trim() }}
+        </p>
+        <p class="hero-sub2" ref="heroSub2">
+          {{ t('hero.sub2', { tech: '', people: '', god: '' }).split('{}')[0] }}
+          <strong>{{ t('hero.sub2_tech') }}</strong>{{ ', ' }}
+          <strong>{{ t('hero.sub2_people') }}</strong>{{ ' ' + (locale === 'fr' ? 'et de' : 'and') + ' ' }}
+          <strong>{{ t('hero.sub2_god') }}</strong>.
         </p>
         <div class="hero-ctas" ref="heroCtas">
-          <a href="#contact" class="btn btn-primary">Travaillons ensemble →</a>
-          <a href="#dev" class="btn btn-outline">Voir mes projets</a>
+          <a href="#contact" class="btn btn-primary">{{ t('hero.cta_primary') }}</a>
+          <a href="#dev" class="btn btn-outline">{{ t('hero.cta_secondary') }}</a>
         </div>
 
         <div class="hero-stats" ref="heroStats">
-          <div class="stat" v-for="s in stats" :key="s.label">
-            <span class="stat-num">{{ s.num }}</span>
-            <span class="stat-label">{{ s.label }}</span>
+          <div class="stat">
+            <span class="stat-num">{{ t('hero.stat1_num') }}</span>
+            <span class="stat-label">{{ t('hero.stat1_label') }}</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">{{ t('hero.stat2_num') }}</span>
+            <span class="stat-label">{{ t('hero.stat2_label') }}</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">{{ t('hero.stat3_num') }}</span>
+            <span class="stat-label">{{ t('hero.stat3_label') }}</span>
           </div>
         </div>
       </div>
@@ -40,14 +52,14 @@
           <span class="badge-dot"></span>
           <div>
             <div class="badge-name">Fanuel Israël TOVEY K.</div>
-            <div class="badge-loc">📍 Lomé · Togo</div>
+            <div class="badge-loc"><AppIcon name="map-pin" :size="11" :stroke="2" style="display:inline;vertical-align:middle;margin-right:3px" />{{ t('hero.badge_loc') }}</div>
           </div>
         </div>
       </div>
     </div>
 
     <div class="scroll-hint" ref="scrollHint">
-      <span>Défiler</span>
+      <span>{{ t('hero.scroll') }}</span>
       <div class="scroll-line"></div>
     </div>
   </section>
@@ -55,43 +67,33 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { gsap } from 'gsap'
+import AppIcon from './AppIcon.vue'
 
-const heroEl     = ref(null)
+const { t, locale } = useI18n()
+
 const heroTag    = ref(null)
 const heroName   = ref(null)
 const heroSub    = ref(null)
+const heroSub2   = ref(null)
 const heroCtas   = ref(null)
 const heroStats  = ref(null)
 const photoCol   = ref(null)
 const scrollHint = ref(null)
-
-const stats = [
-  { num: '5+', label: 'ans d\'expérience' },
-  { num: '1B+', label: 'FCFA transactés' },
-  { num: '3', label: 'projets en prod.' },
-]
 
 onMounted(() => {
   const tl = gsap.timeline({ defaults: { ease: 'power3.out' } })
   tl.from(heroTag.value,   { y: 30, opacity: 0, duration: 0.7, delay: 0.6 })
     .from(heroName.value,  { y: 50, opacity: 0, duration: 0.8 }, '-=0.4')
     .from(heroSub.value,   { y: 30, opacity: 0, duration: 0.7 }, '-=0.5')
+    .from(heroSub2.value,  { y: 30, opacity: 0, duration: 0.7 }, '-=0.5')
     .from(heroCtas.value,  { y: 20, opacity: 0, duration: 0.6 }, '-=0.4')
     .from(heroStats.value, { y: 20, opacity: 0, duration: 0.6 }, '-=0.4')
     .from(photoCol.value,  { x: 60, opacity: 0, duration: 1.0 }, 0.8)
     .from(scrollHint.value,{ opacity: 0, duration: 0.6 }, '-=0.2')
 
-  // floating photo
-  gsap.to(photoCol.value, {
-    y: -14,
-    duration: 3.5,
-    ease: 'sine.inOut',
-    yoyo: true,
-    repeat: -1,
-  })
-
-  // pulsing rings
+  gsap.to(photoCol.value, { y: -14, duration: 3.5, ease: 'sine.inOut', yoyo: true, repeat: -1 })
   gsap.to('.ring1', { scale: 1.06, opacity: 0.4, duration: 2.2, ease: 'sine.inOut', yoyo: true, repeat: -1 })
   gsap.to('.ring2', { scale: 1.10, opacity: 0.25, duration: 3.0, ease: 'sine.inOut', yoyo: true, repeat: -1, delay: 0.8 })
 })
@@ -106,22 +108,9 @@ onMounted(() => {
   overflow: hidden;
   position: relative;
 }
-
-.hero-glow {
-  position: absolute;
-  border-radius: 50%;
-  pointer-events: none;
-}
-.g1 {
-  width: 640px; height: 640px;
-  background: radial-gradient(circle, rgba(139,61,255,0.18) 0%, transparent 70%);
-  top: -160px; right: -80px;
-}
-.g2 {
-  width: 480px; height: 480px;
-  background: radial-gradient(circle, rgba(224,64,251,0.12) 0%, transparent 70%);
-  bottom: -60px; left: -100px;
-}
+.hero-glow { position: absolute; border-radius: 50%; pointer-events: none; }
+.g1 { width: 640px; height: 640px; background: radial-gradient(circle, rgba(139,61,255,0.18) 0%, transparent 70%); top: -160px; right: -80px; }
+.g2 { width: 480px; height: 480px; background: radial-gradient(circle, rgba(224,64,251,0.12) 0%, transparent 70%); bottom: -60px; left: -100px; }
 
 .hero-inner {
   display: grid;
@@ -141,7 +130,7 @@ onMounted(() => {
   padding: 0.4rem 1.1rem;
   border-radius: 100px;
   margin-bottom: 1.5rem;
-  background: rgba(139,61,255,0.07);
+  background: var(--purple-lo);
 }
 
 .hero-name {
@@ -157,14 +146,16 @@ onMounted(() => {
   -webkit-text-fill-color: transparent;
 }
 
-.hero-sub {
-  font-size: 1.1rem;
+.hero-sub, .hero-sub2 {
+  font-size: 1.05rem;
   color: var(--muted);
-  margin-bottom: 2rem;
   max-width: 500px;
   line-height: 1.85;
+  margin-bottom: 0.5rem;
 }
-.hero-sub strong { color: var(--white); }
+.hero-sub strong, .hero-sub2 strong { color: var(--white); }
+.hero-sub { margin-bottom: 0.25rem; }
+.hero-sub2 { margin-bottom: 2rem; }
 
 .hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
 
@@ -184,20 +175,8 @@ onMounted(() => {
 }
 .stat-label { font-size: 0.75rem; color: var(--muted); }
 
-/* photo */
-.hero-photo-col {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.photo-ring {
-  position: absolute;
-  border-radius: 50%;
-  border: 1px solid var(--border);
-  opacity: 0.5;
-}
+.hero-photo-col { position: relative; display: flex; justify-content: center; align-items: center; }
+.photo-ring { position: absolute; border-radius: 50%; border: 1px solid var(--border); opacity: 0.5; }
 .ring1 { width: 110%; height: 110%; }
 .ring2 { width: 125%; height: 125%; border-color: rgba(224,64,251,0.15); }
 
@@ -210,18 +189,14 @@ onMounted(() => {
   width: 100%;
 }
 .hero-photo-frame img { width: 100%; display: block; }
-.photo-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, var(--bg) 0%, transparent 45%);
-}
+.photo-overlay { position: absolute; inset: 0; background: linear-gradient(to top, var(--bg) 0%, transparent 50%); }
 
 .hero-badge {
   position: absolute;
   bottom: 1.5rem; left: 50%;
   transform: translateX(-50%);
   z-index: 2;
-  background: rgba(4,4,15,0.82);
+  background: var(--bg);
   backdrop-filter: blur(14px);
   border: 1px solid var(--border);
   border-radius: 14px;
@@ -245,11 +220,9 @@ onMounted(() => {
 .badge-name { font-weight: 700; font-size: 0.88rem; }
 .badge-loc  { font-family: 'Space Mono', monospace; font-size: 0.68rem; color: var(--muted); }
 
-/* scroll hint */
 .scroll-hint {
   position: absolute;
-  bottom: 2rem;
-  left: 50%;
+  bottom: 2rem; left: 50%;
   transform: translateX(-50%);
   display: flex;
   flex-direction: column;
@@ -262,8 +235,7 @@ onMounted(() => {
   color: var(--muted);
 }
 .scroll-line {
-  width: 1px;
-  height: 40px;
+  width: 1px; height: 40px;
   background: linear-gradient(to bottom, var(--purple), transparent);
   animation: scroll-drop 1.8s ease-in-out infinite;
 }
@@ -274,8 +246,20 @@ onMounted(() => {
 }
 
 @media (max-width: 900px) {
-  .hero-inner { grid-template-columns: 1fr; }
-  .hero-photo-col { order: -1; max-width: 320px; margin: 0 auto; }
+  .hero-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+  .hero-photo-col { order: -1; max-width: 300px; margin: 0 auto; }
   .scroll-hint { display: none; }
+  #hero { padding: 5rem 0 3rem; }
+}
+@media (max-width: 600px) {
+  .hero-photo-col { max-width: 240px; }
+  .hero-ctas { flex-direction: column; gap: 0.75rem; }
+  .hero-ctas .btn { text-align: center; justify-content: center; }
+  .hero-stats { gap: 1.25rem; flex-wrap: wrap; }
+  .stat-num { font-size: 1.2rem; }
+}
+@media (max-width: 400px) {
+  .hero-photo-col { max-width: 200px; }
+  .hero-stats { gap: 1rem; }
 }
 </style>

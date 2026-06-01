@@ -104,11 +104,13 @@ onMounted(() => {
   position: fixed;
   inset: 0;
   background-image:
-    linear-gradient(rgba(139,61,255,0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(139,61,255,0.035) 1px, transparent 1px);
+    linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px);
   background-size: 64px 64px;
+  opacity: 0.35;
   pointer-events: none;
   z-index: 0;
+  transition: opacity 0.4s;
 }
 
 main { position: relative; z-index: 1; }

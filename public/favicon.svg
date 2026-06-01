@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B3DFF"/>
+      <stop offset="100%" stop-color="#E040FB"/>
+    </linearGradient>
+  </defs>
+  <!-- fond arrondi sombre -->
+  <rect width="64" height="64" rx="14" fill="#04040f"/>
+  <!-- lettre F -->
+  <text x="10" y="46" font-family="'Space Mono', monospace, sans-serif"
+        font-size="38" font-weight="700" fill="url(#g)">F</text>
+  <!-- point décoratif -->
+  <circle cx="50" cy="44" r="5" fill="url(#g)"/>
+</svg>

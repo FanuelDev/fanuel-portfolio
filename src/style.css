@@ -1,8 +1,11 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-:root {
+/* ── DARK (default) ── */
+:root,
+[data-theme="dark"] {
   --bg:        #04040f;
   --bg2:       #08081a;
+  --bg-rgb:    4,4,15;
   --purple:    #8B3DFF;
   --purple-lo: rgba(139,61,255,0.18);
   --magenta:   #E040FB;
@@ -13,10 +16,53 @@
   --white:     #F0EFFF;
   --muted:     #8888AA;
   --card:      rgba(255,255,255,0.035);
+  --card-solid: #0d0d22;
   --border:    rgba(139,61,255,0.22);
+  --shadow:    rgba(0,0,0,0.4);
 }
 
-html { scroll-behavior: smooth; }
+/* ── LIGHT ── */
+[data-theme="light"] {
+  --bg:        #F4F2FF;
+  --bg2:       #ECEAF8;
+  --bg-rgb:    244,242,255;
+  --purple:    #5B10D6;
+  --purple-lo: rgba(91,16,214,0.1);
+  --magenta:   #9B10C0;
+  --glow:      rgba(91,16,214,0.2);
+  --glow2:     rgba(155,16,192,0.15);
+  --gold:      #9A6F00;
+  --gold-lo:   rgba(154,111,0,0.1);
+  --white:     #0D0B1F;
+  --muted:     #4A4470;
+  --card:      rgba(255,255,255,0.75);
+  --card-solid: #ffffff;
+  --border:    rgba(91,16,214,0.2);
+  --shadow:    rgba(91,16,214,0.08);
+}
+
+html {
+  scroll-behavior: smooth;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+/* Light mode — renforcer le contraste des sections bg2 */
+[data-theme="light"] #dev,
+[data-theme="light"] #spiritual,
+[data-theme="light"] #media {
+  background: var(--bg2);
+}
+
+[data-theme="light"] .skill-card,
+[data-theme="light"] .project-card,
+[data-theme="light"] .spirit-card,
+[data-theme="light"] .media-card,
+[data-theme="light"] .passion-card,
+[data-theme="light"] .service,
+[data-theme="light"] .pillar {
+  background: #ffffff;
+  box-shadow: 0 2px 16px rgba(91,16,214,0.07);
+}
 
 body {
   background: var(--bg);
@@ -25,6 +71,7 @@ body {
   font-size: 16px;
   line-height: 1.65;
   overflow-x: hidden;
+  transition: background 0.4s ease, color 0.4s ease;
 }
 
 /* scrollbar */
@@ -122,8 +169,37 @@ body {
   font-size: 0.68rem;
   padding: 0.25rem 0.65rem;
   border-radius: 6px;
-  background: rgba(139,61,255,0.12);
-  border: 1px solid rgba(139,61,255,0.25);
-  color: #BBA0FF;
+  background: var(--purple-lo);
+  border: 1px solid var(--border);
+  color: var(--purple);
   letter-spacing: 0.03em;
+}
+
+/* ══════════════════════════════════════
+   RESPONSIVE — mobile-first corrections
+   ══════════════════════════════════════ */
+
+/* Container padding réduit sur mobile */
+@media (max-width: 600px) {
+  .container { padding: 0 1.25rem; }
+}
+
+/* Sections : réduire le padding vertical */
+@media (max-width: 768px) {
+  section { padding-top: 4.5rem !important; padding-bottom: 4.5rem !important; }
+  #contact { padding-bottom: 3rem !important; }
+}
+@media (max-width: 480px) {
+  section { padding-top: 3.5rem !important; padding-bottom: 3.5rem !important; }
+  .section-header { margin-bottom: 2.5rem; }
+}
+
+/* Titres de section plus petits sur mobile */
+@media (max-width: 480px) {
+  .section-title { font-size: 1.65rem; }
+}
+
+/* Boutons */
+@media (max-width: 380px) {
+  .btn { font-size: 0.82rem; padding: 0.65rem 1.25rem; }
 }
