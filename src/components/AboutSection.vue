@@ -21,7 +21,6 @@
           {{ t('about.title') }}<br /><span class="grad">{{ t('about.title2') }}</span>
         </h2>
         <p>
-          {{ t('about.p1', { name: '' }) }}
           <template v-if="locale === 'fr'">
             Je suis <strong>Fanuel Israël TOVEY K.</strong>, développeur frontend freelance basé à Lomé. Je construis des applications web et mobiles performantes avec Angular, Vue.js et Flutter — des plateformes qui gèrent des milliards de transactions et digitalisent des infrastructures critiques.
           </template>
