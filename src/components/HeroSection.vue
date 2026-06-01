@@ -43,8 +43,8 @@
         <div class="photo-ring ring2"></div>
         <div class="hero-photo-frame">
           <picture>
-            <source srcset="/images/IMG_4501.webp" type="image/webp" />
-            <img src="/images/IMG_4501.JPG" alt="Fanuel Israël TOVEY" fetchpriority="high" />
+            <source :srcset="heroWebp" type="image/webp" />
+            <img :src="heroJpg" alt="Fanuel Israël TOVEY" fetchpriority="high" />
           </picture>
           <div class="photo-overlay"></div>
         </div>
@@ -70,6 +70,8 @@ import { ref, onMounted } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { gsap } from 'gsap'
 import AppIcon from './AppIcon.vue'
+import heroJpg  from '../assets/images/IMG_4501.JPG'
+import heroWebp from '../assets/images/IMG_4501.webp'
 
 const { t, locale } = useI18n()
 

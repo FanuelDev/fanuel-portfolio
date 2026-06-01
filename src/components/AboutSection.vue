@@ -4,12 +4,12 @@
       <div class="photo-col" ref="photoEl">
         <div class="photo-stack">
           <picture class="p1">
-            <source srcset="/images/IMG_4504.webp" type="image/webp" />
-            <img src="/images/IMG_4504.JPG" alt="Fanuel" loading="lazy" />
+            <source :srcset="about1Webp" type="image/webp" />
+            <img :src="about1Jpg" alt="Fanuel" loading="lazy" />
           </picture>
           <picture class="p2">
-            <source srcset="/images/IMG_4506.webp" type="image/webp" />
-            <img src="/images/IMG_4506.JPG" alt="Fanuel" loading="lazy" />
+            <source :srcset="about2Webp" type="image/webp" />
+            <img :src="about2Jpg" alt="Fanuel" loading="lazy" />
           </picture>
           <div class="photo-badge"><span>{{ t('about.badge') }}</span></div>
         </div>
@@ -60,6 +60,10 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
+import about1Jpg  from '../assets/images/IMG_4504.JPG'
+import about1Webp from '../assets/images/IMG_4504.webp'
+import about2Jpg  from '../assets/images/IMG_4506.JPG'
+import about2Webp from '../assets/images/IMG_4506.webp'
 import { useI18n } from 'vue-i18n'
 import { gsap } from 'gsap'
 import AppIcon from './AppIcon.vue'

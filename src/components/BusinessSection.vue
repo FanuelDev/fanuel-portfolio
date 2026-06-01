@@ -23,8 +23,8 @@
         <div class="biz-glow"></div>
         <div class="biz-photo">
           <picture>
-            <source srcset="/images/IMG_4511.webp" type="image/webp" />
-            <img src="/images/IMG_4511.JPG" alt="Fanuel — Conseiller" loading="lazy" />
+            <source :srcset="bizWebp" type="image/webp" />
+            <img :src="bizJpg" alt="Fanuel — Conseiller" loading="lazy" />
           </picture>
           <div class="biz-photo-overlay"></div>
         </div>
@@ -45,6 +45,8 @@ import { ref, onMounted } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { gsap } from 'gsap'
 import AppIcon from './AppIcon.vue'
+import bizJpg  from '../assets/images/IMG_4513.JPG'
+import bizWebp from '../assets/images/IMG_4513.webp'
 
 const { t, tm } = useI18n()
 const sectionEl = ref(null); const contentEl = ref(null)
