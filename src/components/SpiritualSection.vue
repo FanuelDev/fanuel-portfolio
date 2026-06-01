@@ -25,12 +25,12 @@
       <div class="teaching-block" ref="teachingEl">
         <div class="teaching-photos">
           <picture class="teach-photo teach-photo--podium">
-            <source :srcset="teach2Webp" type="image/webp" />
-            <img :src="teach2Jpg" alt="Fanuel enseignant au pupitre" loading="lazy" />
-          </picture>
-          <picture class="teach-photo teach-photo--seated">
             <source :srcset="teach1Webp" type="image/webp" />
             <img :src="teach1Jpg" alt="Fanuel enseignant assis" loading="lazy" />
+          </picture>
+          <picture class="teach-photo teach-photo--seated">
+            <source :srcset="teach2Webp" type="image/webp" />
+            <img :src="teach2Jpg" alt="Fanuel enseignant au pupitre" loading="lazy" />
           </picture>
         </div>
         <div class="teaching-text">
@@ -147,13 +147,13 @@ cite { display: block; margin-top: 0.5rem; font-size: 0.75rem; color: var(--gold
   width: 70%; height: 78%;
   top: 0; right: 0;
   box-shadow: 0 0 40px rgba(212,168,83,0.12);
-  z-index: 1;
+  z-index: 2;
 }
 .teach-photo--seated {
   width: 58%; height: 60%;
   bottom: 0; left: 0;
   box-shadow: 0 0 30px rgba(212,168,83,0.08);
-  z-index: 2;
+  z-index: 1;
 }
 .teach-tag {
   display: inline-block;
