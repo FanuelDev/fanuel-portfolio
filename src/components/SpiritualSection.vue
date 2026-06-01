@@ -25,12 +25,12 @@
       <div class="teaching-block" ref="teachingEl">
         <div class="teaching-photos">
           <picture class="teach-photo teach-photo--podium">
-            <source :srcset="teach1Webp" type="image/webp" />
-            <img :src="teach1Jpg" alt="Fanuel enseignant assis" loading="lazy" />
-          </picture>
-          <picture class="teach-photo teach-photo--seated">
             <source :srcset="teach2Webp" type="image/webp" />
             <img :src="teach2Jpg" alt="Fanuel enseignant au pupitre" loading="lazy" />
+          </picture>
+          <picture class="teach-photo teach-photo--seated">
+            <source :srcset="teach1Webp" type="image/webp" />
+            <img :src="teach1Jpg" alt="Fanuel enseignant assis" loading="lazy" />
           </picture>
         </div>
         <div class="teaching-text">
