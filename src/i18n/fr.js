@@ -89,7 +89,7 @@ export default {
     desc:  'Je ne me définis pas d\'abord comme un "chrétien" — mais comme un fils du Dieu vivant qui s\'est révélé pleinement en Jésus-Christ. Cette identité n\'est pas une case, c\'est mon fondement.',
     teaching_tag:   'En action',
     teaching_title: 'Enseignement sur la gestion de ses avoirs en tant qu\'enfant de Dieu',
-    teaching_desc:  'À l\'occasion du premier anniversaire de TNR, j\'ai partagé un enseignement sur la gestion de sa finance, de ses biens et de ses ressources en tant qu\'enfant de Dieu — une vision biblique de l\'intendance qui transforme concrètement la vie.',
+    teaching_desc:  'À l\'occasion du premier anniversaire de TNR, j\'ai partagé lors d\'un talk show aux côtés de Mr. Luc Kekle (Responsable et fondateur de T4J Channel), du Pasteur LARE (Missionnaire au service de Dieu) et de Sophie AKOGO (Communicatrice d\'entreprise et Fondatrice de SaeMenus) — un enseignement sur la gestion de sa finance, de ses biens et de ses ressources en tant qu\'enfant de Dieu.',
     verse: '« Car je suis convaincu que ni la mort, ni la vie… ni aucune autre créature ne pourra nous séparer de l\'amour de Dieu manifesté en Jésus-Christ notre Seigneur. »',
     verse_ref: '— Romains 8:38-39',
     cards: [

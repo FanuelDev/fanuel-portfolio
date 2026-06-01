@@ -89,7 +89,7 @@ export default {
     desc:   'I don\'t define myself first as a "Christian" — but as a son of the living God who fully revealed himself in Jesus-Christ. This identity is not a label, it\'s my foundation.',
     teaching_tag:   'In action',
     teaching_title: 'Teaching stewardship as a child of God',
-    teaching_desc:  'On the occasion of TNR\'s first anniversary, I shared a teaching on managing your finances, possessions, and resources as a child of God — a biblical vision of stewardship that concretely transforms life.',
+    teaching_desc:  'On the occasion of TNR\'s first anniversary, I shared during a talk show alongside Mr. Luc Kekle (Founder of T4J Channel), Pastor LARE (Missionary in God\'s service), and Sophie AKOGO (Business communicator and Founder of SaeMenus) — a teaching on managing your finances, possessions, and resources as a child of God.',
     verse:  '"For I am convinced that neither death nor life… nor anything else in all creation, will be able to separate us from the love of God that is in Christ Jesus our Lord."',
     verse_ref: '— Romans 8:38-39',
     cards: [
