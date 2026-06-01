@@ -15,10 +15,7 @@
           {{ ' ' }}{{ t('hero.sub', { dev: '' }).replace(t('hero.sub_dev'), '').trim() }}
         </p>
         <p class="hero-sub2" ref="heroSub2">
-          {{ t('hero.sub2', { tech: '', people: '', god: '' }).split('{}')[0] }}
-          <strong>{{ t('hero.sub2_tech') }}</strong>{{ ', ' }}
-          <strong>{{ t('hero.sub2_people') }}</strong>{{ ' ' + (locale === 'fr' ? 'et de' : 'and') + ' ' }}
-          <strong>{{ t('hero.sub2_god') }}</strong>.
+          {{ t('hero.sub2') }}
         </p>
         <div class="hero-ctas" ref="heroCtas">
           <a href="#contact" class="btn btn-primary">{{ t('hero.cta_primary') }}</a>
