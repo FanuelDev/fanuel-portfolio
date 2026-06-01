@@ -246,20 +246,27 @@ onMounted(() => {
 }
 
 @media (max-width: 900px) {
-  .hero-inner { grid-template-columns: 1fr; gap: 2.5rem; }
-  .hero-photo-col { order: -1; max-width: 300px; margin: 0 auto; }
-  .scroll-hint { display: none; }
-  #hero { padding: 5rem 0 3rem; }
+  #hero { padding: 7rem 0 3.5rem; }
+  .hero-inner { grid-template-columns: 1fr; gap: 2rem; }
+  .hero-photo-col { order: -1; max-width: 380px; margin: 0 auto; width: 100%; }
+  .scroll-hint { display: none !important; }
 }
 @media (max-width: 600px) {
-  .hero-photo-col { max-width: 240px; }
+  #hero { padding: 7.5rem 0 3rem; }
+  .hero-inner { gap: 1.75rem; }
+  /* Photo prend 80% de la largeur sur mobile */
+  .hero-photo-col { max-width: 72vw; }
   .hero-ctas { flex-direction: column; gap: 0.75rem; }
   .hero-ctas .btn { text-align: center; justify-content: center; }
-  .hero-stats { gap: 1.25rem; flex-wrap: wrap; }
-  .stat-num { font-size: 1.2rem; }
+  .hero-stats { gap: 1.5rem; padding-top: 1.5rem; }
+  .stat-num { font-size: 1.3rem; }
+  .hero-sub, .hero-sub2 { font-size: 0.95rem; }
+  .hero-sub2 { margin-bottom: 1.5rem; }
 }
 @media (max-width: 400px) {
-  .hero-photo-col { max-width: 200px; }
-  .hero-stats { gap: 1rem; }
+  #hero { padding: 8rem 0 2.5rem; }
+  .hero-photo-col { max-width: 78vw; }
+  .hero-stats { gap: 1.25rem; }
+  .stat-num { font-size: 1.2rem; }
 }
 </style>

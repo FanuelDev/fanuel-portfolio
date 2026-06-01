@@ -179,18 +179,21 @@ body {
    RESPONSIVE — mobile-first corrections
    ══════════════════════════════════════ */
 
-/* Container padding réduit sur mobile */
+/* Container padding sur mobile */
 @media (max-width: 600px) {
+  .container { padding: 0 1.5rem; }
+}
+@media (max-width: 400px) {
   .container { padding: 0 1.25rem; }
 }
 
-/* Sections : réduire le padding vertical */
+/* Sections : réduire le padding vertical (exclure #hero qui gère son propre padding) */
 @media (max-width: 768px) {
-  section { padding-top: 4.5rem !important; padding-bottom: 4.5rem !important; }
-  #contact { padding-bottom: 3rem !important; }
+  section:not(#hero) { padding-top: 4.5rem; padding-bottom: 4.5rem; }
+  #contact { padding-bottom: 3rem; }
 }
 @media (max-width: 480px) {
-  section { padding-top: 3.5rem !important; padding-bottom: 3.5rem !important; }
+  section:not(#hero) { padding-top: 3.5rem; padding-bottom: 3.5rem; }
   .section-header { margin-bottom: 2.5rem; }
 }
 

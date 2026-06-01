@@ -94,17 +94,14 @@ onMounted(() => {
 .float-sub   { font-size: 0.72rem; color: var(--muted); }
 @media (max-width: 900px) {
   .biz-wrap { grid-template-columns: 1fr; gap: 2.5rem; }
-  /* Sur mobile, la photo vient après le texte */
   .biz-visual { order: 1; }
   .biz-float-card { right: 0.75rem; bottom: 0.75rem; padding: 0.75rem 1rem; }
   .float-title { font-size: 0.78rem; }
   .float-sub   { font-size: 0.68rem; }
 }
 @media (max-width: 600px) {
-  .biz-float-card {
-    position: static; margin-top: 1rem;
-    width: fit-content;
-  }
+  .biz-content { padding: 0 0.75rem; }
+  .biz-float-card { position: static; margin-top: 1rem; width: fit-content; }
   .service { padding: 0.9rem 1rem; }
 }
 </style>
