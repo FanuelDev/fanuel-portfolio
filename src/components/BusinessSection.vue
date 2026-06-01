@@ -45,8 +45,8 @@ import { ref, onMounted } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { gsap } from 'gsap'
 import AppIcon from './AppIcon.vue'
-import bizJpg  from '../assets/images/IMG_4513.JPG'
-import bizWebp from '../assets/images/IMG_4513.webp'
+import bizJpg  from '../assets/images/IMG_4520.JPG'
+import bizWebp from '../assets/images/IMG_4520.webp'
 
 const { t, tm } = useI18n()
 const sectionEl = ref(null); const contentEl = ref(null)
