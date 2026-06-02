@@ -12,7 +12,7 @@ export default {
     tag:     '// Lomé, Togo — disponible en freelance',
     name1:   'Fanuel Israël',
     name2:   'TOVEY K.',
-    sub:     '{dev} Conseiller d\'entreprises. Auteur. Leader & Enseignant.',
+    sub:     '{dev} Conseiller d\'entreprises. Auteur. Enseignant.',
     sub_dev: 'Développeur Web & Mobile.',
     sub2:    'Un esprit curieux au service de la technologie, des hommes et de Dieu.',
     cta_primary: 'Travaillons ensemble →',
@@ -39,7 +39,7 @@ export default {
     pillars: {
       dev:    { label: 'Développeur',  sub: 'Web & Mobile Freelance' },
       conseil:{ label: 'Conseiller',   sub: 'Stratégie & Business'   },
-      foi:    { label: 'Serviteur',    sub: 'Enseignant & Leader TNR' },
+      foi:    { label: 'Serviteur',    sub: 'Enseignant & Famille TNR' },
       auteur: { label: 'Auteur',       sub: '40 Messages de Vie'      },
     },
   },
@@ -94,7 +94,7 @@ export default {
     verse_ref: '— Romains 8:38-39',
     cards: [
       { icon: 'book-open', title: 'Enseignant de la Parole', desc: 'Je partage des enseignements fondés sur la Parole de Dieu — des messages qui touchent la vie réelle, la marche quotidienne avec le Seigneur.', url: 'https://www.tiktok.com/@fanuelisraeltovey?lang=fr', cta: 'Écouter sur TikTok' },
-      { icon: 'flame',     title: 'Leader TNR',               desc: 'Je dirige <strong>TNR</strong>, un groupe de jeunes chrétiens passionnés par leur marche avec Dieu — un espace de croissance, de communion et de feu.', url: 'https://www.tiktok.com/@tnrfamille?lang=fr', cta: 'Voir TNR Famille' },
+      { icon: 'flame',     title: 'Famille TNR',              desc: 'Je fais partie de <strong>TNR</strong>, une famille de jeunes chrétiens passionnés par leur marche avec Dieu — un espace de croissance, de communion et de feu où chacun est à égalité.', url: 'https://www.tiktok.com/@tnrfamille?lang=fr', cta: 'Voir TNR Famille' },
       { icon: 'radio',     title: 'Connexion & Reconnexion',  desc: 'Intervenant dans l\'émission <em>Connexion & Reconnexion</em> sur <strong>T4J Channel</strong>, une chaîne qui met en lumière l\'œuvre de Dieu.', url: 'https://youtu.be/EdyBWXCmbdM?si=uZzNH_t_mRLeZptz', cta: 'Voir l\'émission' },
     ],
   },

@@ -12,7 +12,7 @@ export default {
     tag:     '// Lomé, Togo — available for freelance',
     name1:   'Fanuel Israël',
     name2:   'TOVEY K.',
-    sub:     '{dev} Business consultant. Author. Leader & Teacher.',
+    sub:     '{dev} Business consultant. Author. Teacher.',
     sub_dev: 'Web & Mobile Developer.',
     sub2:    'A curious mind at the service of technology, people and God.',
     cta_primary:   'Let\'s work together →',
@@ -39,7 +39,7 @@ export default {
     pillars: {
       dev:    { label: 'Developer',   sub: 'Web & Mobile Freelance' },
       conseil:{ label: 'Consultant',  sub: 'Strategy & Business'    },
-      foi:    { label: 'Servant',     sub: 'Teacher & TNR Leader'   },
+      foi:    { label: 'Servant',     sub: 'Teacher & TNR Family'   },
       auteur: { label: 'Author',      sub: '40 Messages of Life'    },
     },
   },
@@ -94,7 +94,7 @@ export default {
     verse_ref: '— Romans 8:38-39',
     cards: [
       { icon: 'book-open', title: 'Teacher of the Word',      desc: 'I share teachings rooted in God\'s Word — messages that touch real life, the daily walk with the Lord.', url: 'https://www.tiktok.com/@fanuelisraeltovey?lang=fr', cta: 'Listen on TikTok' },
-      { icon: 'flame',     title: 'TNR Leader',                desc: 'I lead <strong>TNR</strong>, a group of young Christians passionate about their walk with God — a space of growth, fellowship, and fire.', url: 'https://www.tiktok.com/@tnrfamille?lang=fr', cta: 'See TNR Family' },
+      { icon: 'flame',     title: 'TNR Family',                desc: 'I am part of <strong>TNR</strong>, a family of young Christians passionate about their walk with God — a space of growth, fellowship, and fire where everyone stands as equals.', url: 'https://www.tiktok.com/@tnrfamille?lang=fr', cta: 'See TNR Family' },
       { icon: 'radio',     title: 'Connection & Reconnection', desc: 'Featured in the show <em>Connexion & Reconnexion</em> on <strong>T4J Channel</strong>, a Christian channel shining light on God\'s work.', url: 'https://youtu.be/EdyBWXCmbdM?si=uZzNH_t_mRLeZptz', cta: 'Watch the show' },
     ],
   },

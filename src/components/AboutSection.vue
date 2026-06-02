@@ -30,10 +30,10 @@
         </p>
         <p>
           <template v-if="locale === 'fr'">
-            Mais ma vie dépasse l'écran. Je suis conseiller pour les petites entreprises, passionné d'architecture et d'art, auteur du livre <em>40 Messages de Vie</em>, et leader du groupe de jeunes <strong>TNR</strong>.
+            Mais ma vie dépasse l'écran. Je suis conseiller pour les petites entreprises, passionné d'architecture et d'art, auteur du livre <em>40 Messages de Vie</em>, et membre de la famille <strong>TNR</strong>.
           </template>
           <template v-else>
-            But my life goes beyond screens. I am a business consultant for small companies, passionate about architecture and art, author of <em>40 Messages of Life</em>, and leader of the youth group <strong>TNR</strong>.
+            But my life goes beyond screens. I am a business consultant for small companies, passionate about architecture and art, author of <em>40 Messages of Life</em>, and part of the <strong>TNR</strong> family.
           </template>
         </p>
         <p>
