@@ -147,6 +147,57 @@ export default {
     cta:   'Envoyer un message →',
   },
 
+  clients: {
+    tag:    '// Ils m\'ont fait confiance',
+    title:  'Entreprises avec',
+    title2: 'lesquelles j\'ai travaillé',
+    desc:   'Des startups aux grandes structures, j\'ai eu l\'honneur de contribuer à des projets qui ont un impact réel sur l\'économie africaine.',
+    list: [
+      {
+        icon: 'anchor',
+        name: 'Africa Consulting Leaders (ACL)',
+        sector: 'Transformation digitale',
+        desc: 'Partenaire pour vos projets de digitalisation — solutions numériques pour ports, logistique et acteurs de la chaîne de transport en Afrique.',
+        url: 'https://africaconsultingleaders.com/',
+      },
+      {
+        icon: 'smartphone',
+        name: 'Maono',
+        sector: 'Digital & Tech',
+        desc: 'Entreprise digitale innovante accompagnant les organisations dans leur transition numérique.',
+        url: 'https://maono.co/fr',
+      },
+      {
+        icon: 'trending-up',
+        name: 'GesCaPro',
+        sector: 'Fintech / Microfinance',
+        desc: 'Logiciel de gestion de microfinance et de vente par tontine — suivi en temps réel des collectes terrain.',
+        url: 'https://gescapro.net/',
+      },
+      {
+        icon: 'utensils',
+        name: 'SaeMenus',
+        sector: 'SaaS / Restauration',
+        desc: 'Plateforme de gestion de menus digitaux pour les restaurants et établissements de restauration.',
+        url: 'https://saemenus.com/',
+      },
+      {
+        icon: 'layout',
+        name: 'Agence 07',
+        sector: 'Agence créative',
+        desc: 'Agence web et créative proposant des solutions digitales sur-mesure pour les marques et entreprises.',
+        url: 'https://a07.agency/',
+      },
+      {
+        icon: 'store',
+        name: 'Restaurant & Supermarché La Capitale',
+        sector: 'Restauration & Commerce',
+        desc: 'Établissement de restauration et grande surface locale — contribution à la digitalisation de leur gestion interne.',
+        url: null,
+      },
+    ],
+  },
+
   footer: {
     copy: 'Conçu & développé par {name} — Lomé, Togo © 2025',
   },

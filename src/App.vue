@@ -9,6 +9,8 @@
       <div class="divider" />
       <DevSection />
       <div class="divider" />
+      <ClientsSection />
+      <div class="divider" />
       <BusinessSection />
       <div class="divider" />
       <SpiritualSection />
@@ -31,6 +33,7 @@ import NavBar from './components/NavBar.vue'
 import HeroSection from './components/HeroSection.vue'
 import AboutSection from './components/AboutSection.vue'
 import DevSection from './components/DevSection.vue'
+import ClientsSection from './components/ClientsSection.vue'
 import BusinessSection from './components/BusinessSection.vue'
 import SpiritualSection from './components/SpiritualSection.vue'
 import BookSection from './components/BookSection.vue'

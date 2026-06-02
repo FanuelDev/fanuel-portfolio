@@ -147,6 +147,57 @@ export default {
     cta:    'Send a message →',
   },
 
+  clients: {
+    tag:    '// They trusted me',
+    title:  'Companies I\'ve',
+    title2: 'worked with',
+    desc:   'From startups to large organizations, I\'ve had the honor of contributing to projects with real impact on the African economy.',
+    list: [
+      {
+        icon: 'anchor',
+        name: 'Africa Consulting Leaders (ACL)',
+        sector: 'Digital transformation',
+        desc: 'Your partner for digitalization projects — digital solutions for ports, logistics and transport chain stakeholders across Africa.',
+        url: 'https://africaconsultingleaders.com/',
+      },
+      {
+        icon: 'smartphone',
+        name: 'Maono',
+        sector: 'Digital & Tech',
+        desc: 'Innovative digital company supporting organizations through their digital transformation journey.',
+        url: 'https://maono.co/fr',
+      },
+      {
+        icon: 'trending-up',
+        name: 'GesCaPro',
+        sector: 'Fintech / Microfinance',
+        desc: 'Microfinance and tontine management software — real-time tracking of field collector activity.',
+        url: 'https://gescapro.net/',
+      },
+      {
+        icon: 'utensils',
+        name: 'SaeMenus',
+        sector: 'SaaS / F&B',
+        desc: 'Digital menu management platform for restaurants and food service establishments.',
+        url: 'https://saemenus.com/',
+      },
+      {
+        icon: 'layout',
+        name: 'Agence 07',
+        sector: 'Creative agency',
+        desc: 'Web and creative agency delivering tailor-made digital solutions for brands and businesses.',
+        url: 'https://a07.agency/',
+      },
+      {
+        icon: 'store',
+        name: 'Restaurant & Supermarché La Capitale',
+        sector: 'Food & Retail',
+        desc: 'Local restaurant and supermarket — contributed to the digitalization of their internal management.',
+        url: null,
+      },
+    ],
+  },
+
   footer: {
     copy: 'Designed & developed by {name} — Lomé, Togo © 2025',
   },
