@@ -12,8 +12,8 @@
             <img :src="about2Jpg" alt="Fanuel" loading="lazy" />
           </picture>
           <div class="photo-badge">
-            <img src="https://flagcdn.com/20x15/tg.png" srcset="https://flagcdn.com/40x30/tg.png 2x" width="20" height="15" alt="Togo" class="flag" />
             <span>{{ t('about.badge') }}</span>
+            <img src="https://flagcdn.com/16x12/tg.png" srcset="https://flagcdn.com/32x24/tg.png 2x" width="16" height="12" alt="Togo" class="flag" />
           </div>
         </div>
       </div>
@@ -120,7 +120,7 @@ onMounted(() => {
   font-family: 'Space Mono', monospace; white-space: nowrap;
   display: flex; align-items: center; gap: 0.5rem;
 }
-.flag { border-radius: 2px; display: block; flex-shrink: 0; }
+.flag { border-radius: 2px; display: inline-block; flex-shrink: 0; vertical-align: middle; }
 
 .about-text { padding-top: 0.5rem; }
 .left-title { text-align: left; margin-bottom: 1.5rem; }
