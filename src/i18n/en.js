@@ -12,7 +12,7 @@ export default {
     tag:     '// Lomé, Togo — available for freelance',
     name1:   'Fanuel Israël',
     name2:   'TOVEY K.',
-    sub:     '{dev} Business consultant. Author. Teacher.',
+    sub:     '{dev} Business consultant. Author. Teacher & Trainer.',
     sub_dev: 'Web & Mobile Developer.',
     sub2:    'A curious mind at the service of technology, people and God.',
     cta_primary:   'Let\'s work together →',

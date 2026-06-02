@@ -12,7 +12,7 @@ export default {
     tag:     '// Lomé, Togo — disponible en freelance',
     name1:   'Fanuel Israël',
     name2:   'TOVEY K.',
-    sub:     '{dev} Conseiller d\'entreprises. Auteur. Enseignant.',
+    sub:     '{dev} Conseiller d\'entreprises. Auteur. Enseignant & Formateur.',
     sub_dev: 'Développeur Web & Mobile.',
     sub2:    'Un esprit curieux au service de la technologie, des hommes et de Dieu.',
     cta_primary: 'Travaillons ensemble →',
