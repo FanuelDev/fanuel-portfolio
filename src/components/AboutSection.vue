@@ -120,7 +120,7 @@ onMounted(() => {
   font-family: 'Space Mono', monospace; white-space: nowrap;
   display: flex; align-items: center; gap: 0.5rem;
 }
-.flag { width: 16px; height: 11px; border-radius: 2px; display: inline-block; flex-shrink: 0; vertical-align: middle; object-fit: cover; image-rendering: crisp-edges; }
+.flag { width: 8px; height: 6px; border-radius: 1px; display: inline-block; flex-shrink: 0; vertical-align: middle; object-fit: cover; image-rendering: crisp-edges; }
 
 .about-text { padding-top: 0.5rem; }
 .left-title { text-align: left; margin-bottom: 1.5rem; }
