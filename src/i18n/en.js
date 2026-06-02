@@ -39,7 +39,7 @@ export default {
     pillars: {
       dev:    { label: 'Developer',   sub: 'Web & Mobile Freelance' },
       conseil:{ label: 'Consultant',  sub: 'Strategy & Business'    },
-      foi:    { label: 'Servant',     sub: 'Teacher & TNR Family'   },
+      foi:    { label: 'Servant',     sub: 'Teacher & TNR — The New Road' },
       auteur: { label: 'Author',      sub: '40 Messages of Life'    },
     },
   },
@@ -94,7 +94,7 @@ export default {
     verse_ref: '— Romans 8:38-39',
     cards: [
       { icon: 'book-open', title: 'Teacher of the Word',      desc: 'I share teachings rooted in God\'s Word — messages that touch real life, the daily walk with the Lord.', url: 'https://www.tiktok.com/@fanuelisraeltovey?lang=fr', cta: 'Listen on TikTok' },
-      { icon: 'flame',     title: 'TNR Family',                desc: 'I am part of <strong>TNR</strong>, a family of young Christians passionate about their walk with God — a space of growth, fellowship, and fire where everyone stands as equals.', url: 'https://www.tiktok.com/@tnrfamille?lang=fr', cta: 'See TNR Family' },
+      { icon: 'flame',     title: 'TNR — The New Road',        desc: 'I am part of <strong>TNR (The New Road)</strong>, a family of young Christians passionate about their walk with God — a space of growth, fellowship, and fire where everyone stands as equals.', url: 'https://www.tiktok.com/@tnrfamille?lang=fr', cta: 'See TNR Family' },
       { icon: 'radio',     title: 'Connection & Reconnection', desc: 'Featured in the show <em>Connexion & Reconnexion</em> on <strong>T4J Channel</strong>, a Christian channel shining light on God\'s work.', url: 'https://youtu.be/EdyBWXCmbdM?si=uZzNH_t_mRLeZptz', cta: 'Watch the show' },
     ],
   },
@@ -122,7 +122,7 @@ export default {
     desc:   'I share my thoughts, teachings and perspectives across different platforms.',
     items: [
       { icon: 'tiktok',  platform: 'TikTok — @fanuelisraeltovey', title: 'Perspectives & Teachings',  desc: 'I share personal reflections on walking with the Lord — without mask, with authenticity.', links: [{ label: 'View profile', url: 'https://www.tiktok.com/@fanuelisraeltovey?lang=fr' }] },
-      { icon: 'flame',   platform: 'TikTok — @tnrfamille',       title: 'TNR Family',                 desc: 'The official TNR page — sharing, encouragement and community life for young people who want to go further with God.', links: [{ label: 'View page', url: 'https://www.tiktok.com/@tnrfamille?lang=fr' }] },
+      { icon: 'flame',   platform: 'TikTok — @tnrfamille',       title: 'TNR (The New Road)',          desc: 'The official TNR page — sharing, encouragement and community life for young people who want to go further with God.', links: [{ label: 'View page', url: 'https://www.tiktok.com/@tnrfamille?lang=fr' }] },
       { icon: 'youtube', platform: 'YouTube — T4J Channel',      title: 'Connection & Reconnection',  desc: 'T4J is a Christian channel shining light on God\'s work. I regularly appear in the show Connexion & Reconnexion.', links: [{ label: 'The channel', url: 'https://www.youtube.com/@T4JChannel' }, { label: 'The episode', url: 'https://youtu.be/EdyBWXCmbdM?si=uZzNH_t_mRLeZptz' }] },
       { icon: 'code',    platform: 'Digital projects',           title: 'My work in production',      desc: 'GUFORD, GESCAPRO, Kidolé… Platforms with a real impact on the Togolese economy.', links: [{ label: 'GUFORD', url: 'https://guford.com/' }, { label: 'GESCAPRO', url: 'https://gescapro.net/' }, { label: 'Kidolé', url: 'https://kidole.io/' }] },
     ],
