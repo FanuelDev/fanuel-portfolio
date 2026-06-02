@@ -13,7 +13,7 @@
           </picture>
           <div class="photo-badge">
             <span>{{ t('about.badge') }}</span>
-            <img src="https://flagcdn.com/w20/tg.png" width="16" height="11" alt="🇹🇬" class="flag" />
+            <img src="https://flagcdn.com/w20/tg.png" alt="🇹🇬" class="flag" />
           </div>
         </div>
       </div>
@@ -120,7 +120,7 @@ onMounted(() => {
   font-family: 'Space Mono', monospace; white-space: nowrap;
   display: flex; align-items: center; gap: 0.5rem;
 }
-.flag { width: 1em !important; height: auto !important; border-radius: 1px; display: inline-block !important; flex-shrink: 0; vertical-align: middle; }
+.flag { width: 18px !important; height: auto !important; border-radius: 2px; display: inline-block !important; flex-shrink: 0; vertical-align: middle; }
 
 .about-text { padding-top: 0.5rem; }
 .left-title { text-align: left; margin-bottom: 1.5rem; }
