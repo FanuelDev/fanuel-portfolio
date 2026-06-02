@@ -11,7 +11,10 @@
             <source :srcset="about2Webp" type="image/webp" />
             <img :src="about2Jpg" alt="Fanuel" loading="lazy" />
           </picture>
-          <div class="photo-badge"><span>{{ t('about.badge') }}</span></div>
+          <div class="photo-badge">
+            <img src="https://flagcdn.com/20x15/tg.png" srcset="https://flagcdn.com/40x30/tg.png 2x" width="20" height="15" alt="Togo" class="flag" />
+            <span>{{ t('about.badge') }}</span>
+          </div>
         </div>
       </div>
 
@@ -115,7 +118,9 @@ onMounted(() => {
   border: 1px solid var(--border); border-radius: 10px;
   padding: 0.45rem 1rem; font-size: 0.75rem;
   font-family: 'Space Mono', monospace; white-space: nowrap;
+  display: flex; align-items: center; gap: 0.5rem;
 }
+.flag { border-radius: 2px; display: block; flex-shrink: 0; }
 
 .about-text { padding-top: 0.5rem; }
 .left-title { text-align: left; margin-bottom: 1.5rem; }

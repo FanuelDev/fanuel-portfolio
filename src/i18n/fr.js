@@ -31,7 +31,7 @@ export default {
     tag:   '// À propos',
     title: 'Plusieurs univers,',
     title2: 'une seule vision',
-    badge: 'Lomé, Togo 🇹🇬',
+    badge: 'Lomé, Togo',
     p1: 'Je suis {name}, développeur frontend freelance basé à Lomé. Je construis des applications web et mobiles performantes avec Angular, Vue.js et Flutter — des plateformes qui gèrent des milliards de transactions et digitalisent des infrastructures critiques.',
     p2: 'Mais ma vie dépasse l\'écran. Je suis conseiller pour les petites entreprises, passionné d\'architecture et d\'art, auteur du livre {book}, et leader du groupe de jeunes {tnr}.',
     p3: 'Par-dessus tout, je marche comme un {identity} qui s\'est révélé pleinement en Jésus-Christ — une identité qui éclaire tout ce que je fais.',

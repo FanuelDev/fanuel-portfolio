@@ -31,7 +31,7 @@ export default {
     tag:    '// About',
     title:  'Multiple worlds,',
     title2: 'one vision',
-    badge:  'Lomé, Togo 🇹🇬',
+    badge:  'Lomé, Togo',
     p1: 'I am {name}, a freelance frontend developer based in Lomé. I build high-performance web and mobile applications with Angular, Vue.js, and Flutter — platforms that handle billions in transactions and digitize critical infrastructure.',
     p2: 'But my life goes beyond screens. I am a business consultant for small companies, passionate about architecture and art, author of {book}, and leader of the youth group {tnr}.',
     p3: 'Above all, I walk as a {identity} who fully revealed himself in Jesus-Christ — an identity that illuminates everything I do.',
